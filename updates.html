@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        .update-container {
+            max-width: 1000px;
+            /* Set a maximum width */
+            margin: 0 auto;
+            /* Center the container */
+            padding: 20px;
+            /* Add padding */
+        }
+
+        .update-us {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .update-us h1 {
+            color: #d4af37;
+            /* Golden color */
+            font-size: 2.5em;
+            /* Large font size */
+            text-align: center;
+            /* Center the text */
+        }
+
+        .date-search {
+            display: flex;
+            justify-content: center;
+            /* Center the date search inputs and button */
+            gap: 10px;
+            /* Space between inputs and button */
+            margin-top: 10px;
+        }
+
+        .date-search input[type="text"] {
+            padding: 10px;
+            /* Add padding */
+            border: 1px solid #ccc;
+            /* Light gray border */
+            border-radius: 5px;
+            /* Rounded corners */
+            width: 120px;
+            /* Fixed width */
+            text-align: center;
+            /* Center the text */
+            font-size: 1em;
+            /* Set font size */
+        }
+
+        .date-search button {
+            padding: 10px 15px;
+            /* Add padding */
+            background-color: #d4af37;
+            /* Golden background */
+            border: none;
+            /* Remove border */
+            border-radius: 5px;
+            /* Rounded corners */
+            color: white;
+            /* White text color */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            font-size: 1em;
+            /* Set font size */
+        }
+
+        .updates {
+            margin-top: 20px;
+        }
+
+        .update {
+            background-color: white;
+            /* White background */
+            border: 1px solid #d4af37;
+            /* Golden border */
+            border-radius: 10px;
+            /* Rounded corners */
+            margin-bottom: 20px;
+            /* Space below each update */
+            padding: 15px;
+            /* Add padding */
+        }
+
+        .update-info {
+            display: flex;
+            justify-content: center;
+            /* Center the text */
+            align-items: center;
+            /* Center align items */
+            background-color: #d4af37;
+            /* Golden background */
+            padding: 15px;
+            /* Add padding */
+            border-radius: 10px 10px 0 0;
+            /* Rounded top corners */
+        }
+
+        .update-info h2 {
+            color: white;
+            /* White text color */
+            margin: 0;
+            /* Remove margin */
+            font-size: 1.5em;
+            /* Set font size */
+            text-align: center;
+            /* Center the text */
+        }
+
+        .update p {
+            padding: 15px;
+            /* Add padding */
+            margin: 0;
+            /* Remove margin */
+            font-size: 1.2em;
+            /* Set font size */
+        }
+
+        .update span {
+            color: #d4af37;
+            /* Golden text color */
+            display: block;
+            /* Block display */
+            text-align: center;
+            /* Center the text */
+            margin-top: 10px;
+            /* Space above */
+            font-size: 18px;
+            /* Set font size */
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .update-container {
+                padding: 10px;
+            }
+
+            .update-us h1 {
+                font-size: 2em;
+                /* Smaller font size on smaller screens */
+            }
+
+            .date-search {
+                flex-direction: column;
+                /* Stack elements vertically */
+                align-items: center;
+            }
+
+            .date-search input[type="text"],
+            .date-search button {
+                font-size: 0.9em;
+                padding: 8px;
+                width: 100%;
+                /* Full width */
+                margin-bottom: 10px;
+                /* Space between inputs */
+            }
+
+            .update-info h2 {
+                font-size: 1.2em;
+                /* Smaller font size */
+            }
+
+            .update p {
+                font-size: 1em;
+                /* Smaller font size */
+            }
+
+            .update span {
+                font-size: 0.8em;
+                /* Smaller font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .date-search {
+                flex-direction: column;
+                gap: 5px;
+                /* Reduce gap */
+            }
+
+            .date-search input[type="text"],
+            .date-search button {
+                width: 80%;
+                font-size: 0.8em;
+                padding: 6px;
+            }
+
+            .update-us h1 {
+                font-size: 1.5em;
+                /* Smaller font size */
+            }
+
+            .update-info h2 {
+                font-size: 1em;
+                /* Smaller font size */
+            }
+
+            .update p {
+                font-size: 0.9em;
+                /* Smaller font size */
+            }
+
+            .update span {
+                font-size: 0.7em;
+                /* Smaller font size */
+            }
+        }
+    </style>
+
+
+    <!-- Header Top Container Start-->
+    <div class="header-top container">
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="logo">
+            <a href="index.html"><img src="logo.webp" alt="Logo"></a>
+        </div>
+        <div class="contact-info">
+            <h2><i class="fa fa-phone"></i> CONTACT NUMBER</h2>
+            <p>
+                <a href="tel:+915624307887"><span class="bookingno2">Gold - +91 562 4307887</span></a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Header Main -->
+    <header class="header-main">
+        <nav class="header-nav">
+
+            <ul class="header-ul" id="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="live-rates.html">Live Rates</a></li>
+                <li><a href="coins-rates.html">Coins Rates</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="bank-details.html">Bank Details</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <img src="logo.webp" alt="Logo" class="logo">
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+            <li><a href="#"><i class="fa fa-diamond"></i> Jewellery</a></li>
+            <li><a href="live-rates.html"><i class="fa fa-line-chart"></i> Live Rate</a></li>
+            <li><a href="coins-rates.html"><i class="fa fa-money"></i> Coin Rate</a></li>
+            <li><a href="updates.html"><i class="fa fa-newspaper-o"></i> Updates</a></li>
+            <li><a href="bank-details.html"><i class="fa fa-bank"></i> Bank Detail</a></li>
+            <li><a href="calendar.html"><i class="fa fa-calendar"></i> Economic Calendar</a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fa fa-globe"></i> Visit Our Website</a></li>
+            <li><a href="#"><i class="fa fa-share-alt"></i> Share</a></li>
+            <li><a href="#"><i class="fa fa-star"></i> Rate Our App</a></li>
+        </ul>
+
+        <div class="social-media">
+            <p>Follow on Social Account</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+
+
+
+    <div class="header-top-marquee">
+        <div class="container-fluid">
+            <marquee class="marquee1">विशेष ~ आपकी सेवा में हमने एक नई कड़ी और जोड़ दी है सोने के 20k/ 18K Hallmark जेवर
+                वा चांदी की ज्वेलरी पायल मूर्ति बर्तन सिक्के संपूर्ण रेंज एवं विशाल संग्रह के साथ ( बहुत ही उचित मूल्य )
+                पर उपलब्ध हैं हमेशा की तरह आपके साथ और सहयोग की कामना करते हैं | Working Hours: 11:30 AM - 08:00 PM
+            </marquee>
+        </div>
+    </div>
+
+    <!--Header End-->
+
+
+
+    <!--Main Start-->
+
+    <main>
+
+        <div class="update-container">
+            <div class="update-us">
+                <h1>UPDATES</h1>
+                <div class="date-search">
+                    <input type="text" placeholder="28/05/2024">
+                    <input type="text" placeholder="28/05/2024">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="updates">
+                <div class="update">
+                    <div class="update-info">
+                        <h2>Welcome to Radhika Jewellers</h2>
+                    </div>
+                    <span>12 Feb 2024 3:53PM</span>
+                    <p>Thank you</p>
+                </div>
+                <div class="update">
+                    <div class="update-info">
+                        <h2>Happy Deepavali</h2>
+                    </div>
+                    <span>12 Nov 2023 12:52PM</span>
+                    <p>May the light of the diyas guide you towards the path of happiness and success.</p>
+                </div>
+                <div class="update">
+                    <div class="update-info">
+                        <h2>Happy Dhanteras</h2>
+                    </div>
+                    <span>10 Nov 2023 12:10PM</span>
+                    <p>May the divine blessings of Goddess Lakshmi fill your life with wealth and prosperity. Happy
+                        Dhanteras!!</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Main End-->
+
+
+
+
+    <!--Footer Start-->
+
+    <marquee class="marquee2">Radhika Jewellers Live Rates provides Gold &amp; Silver prices obtained from various
+        sources believed to be reliable, but we do not guarantee their accuracy. Our gold &amp; silver price data are
+        provided without warranty or claim of reliability. It is accepted by the site visitor on the condition that
+        errors or omissions shall not be made the basis for any claim, demand or cause for action. </marquee>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img src="logo.webp" alt="Radhika Jewellers Logo" class="footer-logo">
+                <p>About Company</p>
+            </div>
+            <div class="footer-section menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Live Rate</a></li>
+                    <li><a href="#">Coins Rates</a></li>
+                    <li><a href="#">Update</a></li>
+                    <li><a href="#">Bank Detail</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Radhika Jewellers</strong><br>
+                    Namak Ki Mandi,<br>
+                    Kinari Bazar,<br>
+                    Agra, Uttar Pradesh,<br>
+                    India - 282002</p>
+                <p><a href="mailto:info@radhikajewellers.in">info@radhikajewellers.in</a></p>
+                <p><a href="tel:+919897201554">+91 9897 201554</a></p>
+            </div>
+            <div class="footer-section app-links">
+                <img src="mobile.webp" alt="Phone" class="phone">
+                <div class="app-buttons">
+                    <a href="#"><img src="android.webp" alt="Get it on Google Play"></a>
+                    <a href="#"><img src="ios.webp" alt="Download on the App Store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2023 Radhika Jewellers</p>
+            <p>Design & Develop By <a href="#">SL</a></p>
+        </div>
+    </footer>
+
+    <!--Footer End-->
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
