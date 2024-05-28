@@ -10,9 +10,102 @@
 
 <body>
     <style>
-       
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+
+        .notice-container-main {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .notice-container {
+            background-color: goldenrod;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .notice-text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .working-hours {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .notice-container {
+                padding: 15px;
+            }
+
+            .notice-text {
+                font-size: 14px;
+            }
+
+            .working-hours {
+                font-size: 12px;
+            }
+        }
 
 
+
+
+        .row {
+            display: flex;
+        }
+
+        .left-section,
+        .right-section {
+            width: 50%;
+            box-sizing: border-box;
+            /* Ensures padding and border are included in the width */
+        }
+
+        /* Adjust text width within lf-cvr */
+        .lf-cvr {
+            width: 100%;
+            /* Ensures full width within the parent container */
+            max-width: 300px;
+            /* Example maximum width, adjust as needed */
+            margin: 0 auto;
+            /* Centers the content horizontally within the lf-cvr */
+            padding: 20px;
+            /* Adjust padding as needed */
+        }
+
+        /* Align text at the bottom within .pn.head */
+        .pn.head {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100%;
+            justify-content: flex-end;
+        }
+
+        /* Align text at the bottom within .pn.rat.coin-rate */
+        .pn.rat.coin-rate {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100%;
+            justify-content: flex-end;
+        }
+
+        /* Add space between "1 Gm 22K Ginni" and "7183" */
+        .pn.rat.coin-rate span {
+            margin-top: 10px;
+            /* Adjust margin-top as needed */
+        }
     </style>
 
 
@@ -94,8 +187,57 @@
     <!--Main Start-->
 
     <main>
+        <div class="notice-container-main">
+            <div class="notice-container">
+                <p class="notice-text">विषय - आपको सेवा ही हमारे एक तरफ कुछी और जाड़े दी है सोने के 20k/ 18K Hallmark
+                    जेवर वा चांदी की जेवरी पायेज मुहि बनने सिरफ सोपुर ऊपर एवं विशाल सोंग के साथ (बहुत ही जटिल परम) पर
+                    उपलब्ध है हमेशा को तरह आपके साथ और सहयोग की कामना करते हैं।</p>
+                <p class="working-hours">Working Hours: 11:30 AM - 08:00 PM</p>
+            </div>
+        </div>
 
-       
+
+
+
+        <div class="product-cover">
+            <div class="table-container">
+                <div class="coin-cover">
+                    <div class="row">
+                        <div class="left-section" id="goldcoin">
+                            <div class="lf-cvr">
+                                <div class="pn head">
+                                    <span class="l-w">GOLD COIN</span>
+                                    <span class="text-center r-w">RATE (<i class="fa fa-inr"></i>)</span>
+                                </div>
+                                <div class="pn rat coin-rate">
+                                    <span class="l-w">1 Gm 22K Ginni</span>
+                                    <span class="text-center r-w">
+                                        <p class="e"><i class="fa fa-inr"></i>7183</p>
+                                    </span>
+                                </div>
+                                <!-- More gold coin rates can be added here -->
+                            </div>
+                        </div>
+                        <div class="right-section" id="silvercoin">
+                            <div class="lf-cvr">
+                                <div class="pn head">
+                                    <span class="l-w">SILVER COIN</span>
+                                    <span class="text-center r-w">RATE (<i class="fa fa-inr"></i>)</span>
+                                </div>
+                                <div class="pn rat coin-rate">
+                                    <span class="l-w">10 Gm 99.99%</span>
+                                    <span class="text-center r-w">
+                                        <p class="e"><i class="fa fa-inr"></i>975</p>
+                                    </span>
+                                </div>
+                                <!-- More silver coin rates can be added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!--Main End-->
