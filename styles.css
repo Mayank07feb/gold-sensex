@@ -14,6 +14,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Header Start*/
 /* Style for header-top container */
 .header-top {
     display: flex;
@@ -118,7 +119,8 @@ body {
     padding-top: 60px;
     z-index: 200;
     overflow-y: auto;
-    transition: width 0.3s; /* Updated transition property */
+    transition: width 0.3s;
+    /* Updated transition property */
 }
 
 #sidebar ul {
@@ -133,7 +135,8 @@ body {
 #sidebar a {
     color: black;
     text-decoration: none;
-    transition: color 0.3s; /* Added transition for text color */
+    transition: color 0.3s;
+    /* Added transition for text color */
 }
 
 /* Hover effect on sidebar links */
@@ -239,7 +242,8 @@ body {
 }
 
 .sidebar-menu li a {
-    transition: none; /* Remove global transition for individual links */
+    transition: none;
+    /* Remove global transition for individual links */
 }
 
 .sidebar-menu li:hover a {
@@ -272,7 +276,7 @@ body {
 }
 
 
-
+/*Header End*/
 
 
 
@@ -308,14 +312,14 @@ body {
 
 
 
+/*Header Marquee end*/
 
 
 
 
 
 
-
-
+/*Main Section Start*/
 
 
 .container {
@@ -518,33 +522,11 @@ td span {
 }
 
 
+/*Main Section End*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Footer Marquee Start*/
 
 
 .marquee2 {
@@ -583,7 +565,7 @@ td span {
 
 
 
-
+/*Footer Start*/
 
 
 .footer {
@@ -725,3 +707,6 @@ td span {
         display: none;
     }
 }
+
+
+/*Footer End*/
