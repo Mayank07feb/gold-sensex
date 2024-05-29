@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuIcon = document.querySelector('.menu-icon'); // Updated to target .menu-icon
+    const menuIcon = document.querySelector('.menu-icon');
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('overlay');
 
